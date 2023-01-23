@@ -4,11 +4,11 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { useOrderDetails } from "../../context/OrderDetails";
 
-export default function ScoopOption({ imagePath, name }) {
-  const [_, updateItemCount] = useOrderDetails();
+export default function ScoopOption({ imagePath, name, updateItemCount }) {
+  // const [_, updateItemCount] = useOrderDetails();
   const handleChange = (event) => {
     const value = event.target.value;
-    updateItemCount(name, value, "scoops");
+    updateItemCount(name, value);
   };
   return (
     <Col xs={12} sm={6} md={4} lg={3} style={{ textAlign: "center" }}>

@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Container } from "react-bootstrap";
 import { OrderDetailsProvider } from "./context/OrderDetails";
